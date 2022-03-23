@@ -1,0 +1,12 @@
+.busca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.busca h1{
+    width: 100vw;
+}
+.busca button{
+    height: 56px;
+}
