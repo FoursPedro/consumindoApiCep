@@ -1,12 +1,7 @@
 *{
-  margin: 0;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
 }
-
-main{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+.App{
+  padding-top: 1em;
 }

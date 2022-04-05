@@ -1,12 +1,31 @@
 .busca{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2em;
+    flex-direction: column;
+    margin-bottom: 1em;
 }
-.busca h1{
-    width: 100vw;
+.busca div h1{
+    margin: 10px 0;
 }
-.busca button{
-    height: 56px;
+.busca div form{
+    display: flex;
+}
+.busca div form input{
+    width: 10em;
+    height: 3em;
+    font-size: 14pt;
+    margin-right: .5em;
+    border: 1px solid rgb(2, 47, 129);
+    border-radius: 5px;
+    padding-left: 1em;
+}
+.busca div form button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: rgb(30, 66, 128);
+    width: 10em;
+    cursor: pointer;
+}
+.busca div form button:hover{
+    background-color: rgb(17, 38, 75);
 }
