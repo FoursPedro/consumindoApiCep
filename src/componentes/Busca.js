@@ -9,24 +9,35 @@ function Busca({setCep}){
         conteudoInput = "";
     }
 
+    // var teste = "97590000"
+    // var formatado = teste.replace(/^(\d{2})(\d{3})(\d{3})/, "$1.$2-$3")
+    // /^(\d{2})(\d{3})(\d{3})/
+    // "$1.$2-$3"
+
+    function mascara(){
+        var teste = conteudoInput.replace(/^(\d{2})(\d{3})(\d{3})/, "$1.$2-$3");
+        document.getElementById('cep').value = teste;
+    }
+
     return(
         <div className={styles.busca}>
             <div> <h1>Buscar CEP</h1> </div>
 
             <div>
                 <form>
-                    <input 
-                        name="cep" 
-                        id="cep" 
-                        placeholder="cep" 
-                        maxLength={9} 
-                        onChange={(e) => {conteudoInput = e.target.value}}
+                    <input
+                        id="cep"
+                        placeholder="CEP"
+                        maxLength={8}
+                        onChange={(e) => {
+                            conteudoInput = e.target.value;
+                            mascara();
+                        }}
                     />
 
                     <button onClick={(e) => { 
                         e.preventDefault();
                         setCep(conteudoInput);
-                        console.log("saiu do busca " + conteudoInput);
                         limpaPesquisa();
                     }}>
                         Buscar

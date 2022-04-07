@@ -8,6 +8,7 @@
 }
 .busca div form{
     display: flex;
+    flex-wrap: wrap;
 }
 .busca div form input{
     width: 10em;
@@ -24,6 +25,7 @@
     color: white;
     background: rgb(30, 66, 128);
     width: 10em;
+    height: 4.6em;
     cursor: pointer;
 }
 .busca div form button:hover{
